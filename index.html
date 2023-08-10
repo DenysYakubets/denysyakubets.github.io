@@ -136,7 +136,7 @@ input[type=text] {
         function onLoadPage() {
             var json_str = Cookies.get('konspect');
             var arrayFileds = []
-            if(json_str != ""){
+            if(json_str != undefined)
                 arrayFileds = JSON.parse(json_str)  
             }
 
